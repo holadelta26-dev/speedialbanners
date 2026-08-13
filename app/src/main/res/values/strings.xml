@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Marcado Rápido</string>
+    <string name="instructions">Toca una casilla vacía para asignar una foto (banner) y un contacto. Mantén presionada una casilla ya asignada para llamar.</string>
+    <string name="tap_to_assign">Toca para asignar</string>
+    <string name="banner_desc">Banner del contacto</string>
+    <string name="pick_banner_first">Elige primero una foto para el banner</string>
+    <string name="action_remove">Quitar</string>
+    <string name="option_change_number">Cambiar número</string>
+    <string name="option_change_photo">Cambiar foto</string>
+    <string name="dialog_number_source_title">¿De dónde tomamos el número?</string>
+    <string name="option_from_contacts">Elegir de mis contactos</string>
+    <string name="option_manual">Escribir número manualmente</string>
+    <string name="hint_name">Nombre (opcional)</string>
+    <string name="hint_number">Número de teléfono</string>
+    <string name="action_save">Guardar</string>
+    <string name="error_no_number">Escribe o elige un número válido</string>
+    <string name="error_call_permission">Se necesita permiso de llamada para usar el marcado rápido</string>
+</resources>
