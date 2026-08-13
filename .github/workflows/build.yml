@@ -1,0 +1,31 @@
+name: Compilar APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compilar APK (debug)
+        uses: gradle/gradle-build-action@v3
+        with:
+          gradle-version: 8.7
+          arguments: assembleDebug
+
+      - name: Subir el APK como resultado
+        uses: actions/upload-artifact@v4
+        with:
+          name: SpeedDialBanners-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
